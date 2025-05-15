@@ -296,7 +296,7 @@
             <hr class="section-divider">
     
   <!-- ◀ only in index.html -->
-  <style>
+<!--   <style>
     /* highlight full-time role */
     .featured-role {
       background: #eef6ff;
@@ -308,15 +308,77 @@
     .internship-list .media {
       margin-bottom: 0.4em;
     }
-  </style>
+  </style> -->
+<style>
+  /* highlight full-time role */
+  .media.featured-role {
+    background-color: #eef6ff;      /* soft blue background */
+    border-left: 4px solid #0073b1; /* LinkedIn-blue accent */
+    padding: 1rem 1.25rem;          /* comfy padding */
+    border-radius: 6px;             /* rounded corners */
+    margin-bottom: 1.5rem;          /* space below */
+  }
+
+  /* color & size the title of the featured role */
+  .media.featured-role .media-heading strong {
+    display: block;       /* takes its own line */
+    color: #0073b1;       /* match the accent */
+    font-size: 1.1rem;    /* slightly larger text */
+    margin-bottom: 0.5rem;
+  }
+
+  /* remove the extra <br> spacing in the featured role heading */
+  .media.featured-role .media-heading br {
+    display: none;
+  }
+
+  /* tighten up internship spacing */
+  .internship-list .media {
+    margin-bottom: 0.75rem;
+  }
+</style>
+
+            
 </head>
 <body>
       <h3>
       <a name="experience"></a> Professional Experience
     </h3>
 
+    <body>
+  <section id="experience" class="professional-experience">
+    <h2>Professional Experience</h2>
+
+    <ul class="experience-list">
+      <!-- Current (full-time) role -->
+      <li class="experience-item featured-role">
+        <h3 class="role-title">Senior Machine Learning Engineer</h3>
+        <p class="role-meta">LinkedIn, Sunnyvale, CA · Sep 2024 – Present</p>
+        <ul class="role-details">
+          <li>Develop LLM-based multi-agent systems to optimize LinkedIn’s hiring process, incorporating customized recruiter preferences.</li>
+          <li>Conduct applied research on robust semantic search solutions.</li>
+        </ul>
+      </li>
+
+      <!-- Past internships -->
+      <li class="experience-item">
+        <h3 class="role-title">Research Scientist Intern</h3>
+        <p class="role-meta">Meta Reality Labs, Burlingame, CA · Sep 2023 – Dec 2023</p>
+      </li>
+      <li class="experience-item">
+        <h3 class="role-title">Machine Learning Engineer Intern</h3>
+        <p class="role-meta">LinkedIn, Sunnyvale, CA · Jun 2023 – Sep 2023</p>
+      </li>
+      <li class="experience-item">
+        <h3 class="role-title">Machine Learning Engineer Intern</h3>
+        <p class="role-meta">LinkedIn, Sunnyvale, CA · Jun 2022 – Sep 2022</p>
+      </li>
+    </ul>
+  </section>
+</body>
+
   <!-- Full-time role with work content -->
-  <div class="media featured-role">
+<!--   <div class="media featured-role">
     <div class="media-body">
       <p class="media-heading">
         <strong>Senior Machine Learning Engineer, LinkedIn, Sunnyvale, CA. Sep 2024 – Present</strong><br>
@@ -327,7 +389,7 @@
   </div>
 
   <!-- Internships: no work-content bullets -->
-  <div class="internship-list">
+<!--   <div class="internship-list">
     <div class="media">
       <div class="media-body">
         <p class="media-heading">
@@ -350,7 +412,7 @@
       </div>
     </div>
   </div>
-</body>
+</body> -->
 
 
             
